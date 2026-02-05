@@ -13,6 +13,3 @@ autoinstall:
     locale: en_US.UTF-8
     drivers:
       install: true 
-    storage:
-      layout:
-        name: direct 
