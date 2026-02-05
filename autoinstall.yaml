@@ -53,7 +53,7 @@ autoinstall:
     packages:
       - net-tools
       - git 
-   network: 
+    network: 
     version: 2
     ethernets: 
       ens33:
