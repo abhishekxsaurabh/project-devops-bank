@@ -1,0 +1,18 @@
+#cloud-config
+autoinstall:
+    version: 1
+    package:
+      - ubuntu-desktop
+    identity:
+        hostname: autoinstall-vector-node
+        username: bladmin
+        realname: 'Brainlab Admin'
+        password: $6$WoeX9r.IqIHLEDu3$H5w/A03xzaKW6jHAsZ1dJDIlM5B9DPxX0VQQJ/nP3H7PTgSjgOGUlWlXgllX3TJ1kyqmgyEA.lftQdp4klEwU1 
+    keyboard:
+      layout: us
+    locale: en_US.UTF-8
+    drivers:
+      install: true 
+    storage:
+      layout:
+        name: direct 
