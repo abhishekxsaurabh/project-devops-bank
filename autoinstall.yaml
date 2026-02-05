@@ -11,5 +11,10 @@ autoinstall:
     keyboard:
       layout: us
     locale: en_US.UTF-8
+    timezone: "Europe/Berlin"
     drivers:
       install: true 
+    storage:
+      layout:
+        name: direct 
+        reset-partition: 12g
