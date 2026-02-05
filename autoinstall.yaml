@@ -19,41 +19,41 @@ autoinstall:
     storage:
       layout:
         name: direct 
-     version: 1 
-     config:
-       - id: disk0-part1
-         type: partition
-         number: 1
-         size: 3GB
-         device: disk0
-         flag: boot
-       - id: disk0-part2
-         type: partition
-         number: 2
-         size: 1GB
-         device: disk0
-       - id: disk0-part1-format-root
-         type: format
-         fstype: ext4
-         volume: disk0-part1
-       - id: disk0-part2-format-home
-         type: format
-         fstype: ext4
-         volume: disk0-part2
-       - id: disk0-part1-mount-root
-         type: mount
-         path: /
-         device: disk0-part1-format-root
-       - id: disk0-part2-mount-home
-         type: mount
-         path: /home
-         device: disk0-part2-format-home
-         reset-partition: 12g
+      version: 1 
+      config:
+        - id: disk0-part1
+          type: partition
+          number: 1
+          size: 3GB
+          device: disk0
+          flag: boot
+        - ID: Disk0-part2
+          type: partition
+          number: 2
+          size: 1GB
+          device: disk0
+        - id: disk0-part1-format-root
+          type: format
+          fstype: ext4
+          volume: disk0-part1
+        - id: disk0-part2-format-home
+          type: format
+          fstype: ext4
+          volume: disk0-part2
+        - id: disk0-part1-mount-root
+          type: mount
+          path: /
+          device: disk0-part1-format-root
+        - id: disk0-part2-mount-home
+          type: mount
+          path: /home
+          device: disk0-part2-format-home
+          reset-partition: 12g
     updates: all
     packages:
       - net-tools
       - git 
-  network: 
+   network: 
     version: 2
     ethernets: 
       ens33:
